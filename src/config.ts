@@ -91,7 +91,7 @@ export const RULES: Record<Issue, IssueRule> = {
   // Leaning briefly is normal; only sustained leaning is flagged.
   sideLean: { enter: 1, exit: 0.5, enterMs: 8000, exitMs: 1500 },
   // Normal spontaneous blinking is every 3-5 s; staring at a screen stretches that well past 10 s.
-  blink: { enter: 15, exit: 6, enterMs: 0, exitMs: 300 },
+  blink: { enter: 20, exit: 6, enterMs: 0, exitMs: 300 },
   sitting: {
     enter: SITTING_LIMIT_MIN,
     exit: SITTING_LIMIT_MIN,
