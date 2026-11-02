@@ -1,0 +1,45 @@
+# Builds the app and publishes it to the gh-pages branch.
+# In the repo settings, set Pages to "Deploy from a branch" → gh-pages / (root).
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Reads the pnpm version from "packageManager" in package.json.
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      # Project sites are served under /<repo-name>/, so tell Vite the base path.
+      - name: Build
+        run: |
+          pnpm run copy-wasm
+          pnpm run typecheck
+          pnpm exec vite build --base "/${{ github.event.repository.name }}/"
+
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          force_orphan: true
