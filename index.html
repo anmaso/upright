@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upright — Are you sitting up straight?</title>
+    <meta
+      name="description"
+      content="Free posture reminder that runs entirely in your browser. Your webcam checks for slouching, leaning in, head tilt and long sitting, and nudges you to sit up straight. No data ever leaves your device."
+    />
+    <meta name="theme-color" content="#fffbf9" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://upright.linkly.ai/" />
+    <link rel="icon" href="/upright/mark.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/upright/og.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Upright by Linkly AI" />
+    <meta property="og:title" content="Upright — Are you sitting up straight?" />
+    <meta
+      property="og:description"
+      content="Posture reminder that runs in your browser. Your webcam checks slouching, leaning in, head tilt and long sitting. No data ever leaves your device."
+    />
+    <meta property="og:url" content="https://upright.linkly.ai/" />
+    <meta property="og:image" content="https://upright.linkly.ai/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Upright: a seated figure with a straight back, and the words Are you sitting up straight?"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@linkly_ai" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Upright",
+        "alternateName": "坐直",
+        "url": "https://upright.linkly.ai/",
+        "description": "Posture reminder that runs entirely in your browser. Your webcam checks for slouching, leaning in, head tilt and long sitting. No data ever leaves your device.",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires a webcam and a Chromium-based browser",
+        "inLanguage": ["en", "zh-CN"],
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Organization", "name": "Linkly AI", "url": "https://linkly.ai/" },
+        "codeRepository": "https://github.com/LinklyAI/upright"
+      }
+    </script>
+    <!-- Vercel Web Analytics (script form; no package needed for a plain Vite site). -->
+    <script>
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script type="module" crossorigin src="/upright/assets/index-DjG68zpI.js"></script>
+    <link rel="stylesheet" crossorigin href="/upright/assets/index-9RHAKF1g.css">
+  </head>
+  <body>
+    <main class="app">
+      <header class="masthead">
+        <div class="brand">
+          <svg class="brand__mark" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true" focusable="false">
+            <circle cx="17.5" cy="6.5" r="3.6" fill="currentColor" />
+            <g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15.5 12.5V22h9v7" />
+              <path d="M15.5 22H9M11 22v7" />
+              <path d="M15.5 15l6 3.5" />
+            </g>
+          </svg>
+          <span data-i18n="brand">Upright</span>
+          <span class="brand__tagline" data-i18n="tagline">Are you sitting up straight?</span>
+        </div>
+        <nav class="masthead__nav">
+          <label class="language-control">
+            <span class="sr-only" data-i18n="language">Language</span>
+            <select id="language" class="language-select" data-i18n-aria="language">
+              <option value="en">English</option>
+              <option value="zh">简体中文</option>
+            </select>
+          </label>
+          <button id="theme" type="button" data-i18n-aria="themeToggle">
+            <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5" />
+              <path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor" />
+            </svg>
+          </button>
+          <a
+            id="github"
+            href="https://github.com/LinklyAI/upright"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n-aria="github"
+          >
+            <!-- GitHub mark (Octicons mark-github). -->
+            <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path
+                fill="currentColor"
+                d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
+              />
+            </svg>
+          </a>
+        </nav>
+      </header>
+
+      <div class="stage-column">
+        <p class="stage-note" data-i18n="note">
+          Posture detection that runs in your browser. No data ever leaves your device.
+        </p>
+        <section class="stage" data-i18n-aria="stageAria">
+          <video id="video" playsinline muted></video>
+          <canvas id="overlay"></canvas>
+          <div id="stage-hint" class="stage__hint" data-i18n="stageHint">Click "Start camera" to begin</div>
+          <div id="stage-alert" class="stage__alert" role="status" hidden></div>
+        </section>
+
+        <section class="toolbar" data-i18n-aria="controlsAria">
+          <div class="toolbar__row">
+            <button id="start" type="button" class="btn btn--primary" data-i18n="btnStart">Start camera</button>
+            <button id="calibrate" type="button" class="btn" disabled data-i18n="btnCalibrate">
+              Calibrate · sit upright for 3 s
+            </button>
+            <button id="pip" type="button" class="btn" disabled data-i18n="btnPip">Floating window</button>
+          </div>
+          <div class="toolbar__row toolbar__row--settings">
+            <fieldset class="segmented" id="sensitivity">
+              <legend class="label" data-i18n="sensitivity">Sensitivity</legend>
+              <label
+                ><input type="radio" name="sensitivity" value="low" /><span data-i18n="sensitivityLow">Low</span></label
+              >
+              <label
+                ><input type="radio" name="sensitivity" value="normal" /><span data-i18n="sensitivityNormal"
+                  >Normal</span
+                ></label
+              >
+              <label
+                ><input type="radio" name="sensitivity" value="high" /><span data-i18n="sensitivityHigh"
+                  >High</span
+                ></label
+              >
+            </fieldset>
+            <fieldset class="segmented" id="sound">
+              <legend class="label" data-i18n="sound">Sound alerts</legend>
+              <label><input type="radio" name="sound" value="on" /><span data-i18n="soundOn">On</span></label>
+              <label><input type="radio" name="sound" value="off" /><span data-i18n="soundOff">Off</span></label>
+            </fieldset>
+          </div>
+          <div class="toolbar__row toolbar__switches">
+            <!-- One switch per check; data-issue matches the Issue type and wires it up in main.ts. -->
+            <label class="switch">
+              <input type="checkbox" data-issue="tooClose" checked />
+              <span class="switch__track" aria-hidden="true"></span>
+              <span data-i18n="issueTooClose">Too close</span>
+            </label>
+            <label class="switch">
+              <input type="checkbox" data-issue="headDown" checked />
+              <span class="switch__track" aria-hidden="true"></span>
+              <span data-i18n="issueHeadDown">Head down</span>
+            </label>
+            <label class="switch">
+              <input type="checkbox" data-issue="headTilt" checked />
+              <span class="switch__track" aria-hidden="true"></span>
+              <span data-i18n="issueHeadTilt">Head tilt</span>
+            </label>
+            <label class="switch">
+              <input type="checkbox" data-issue="headForward" checked />
+              <span class="switch__track" aria-hidden="true"></span>
+              <span data-i18n="issueHeadForward">Forward head</span>
+            </label>
+            <label class="switch">
+              <input type="checkbox" data-issue="slouch" checked />
+              <span class="switch__track" aria-hidden="true"></span>
+              <span data-i18n="issueSlouch">Slouching</span>
+            </label>
+            <label class="switch">
+              <input type="checkbox" data-issue="shrug" checked />
+              <span class="switch__track" aria-hidden="true"></span>
+              <span data-i18n="issueShrug">Raised shoulders</span>
+            </label>
+            <label class="switch">
+              <input type="checkbox" data-issue="sideLean" checked />
+              <span class="switch__track" aria-hidden="true"></span>
+              <span data-i18n="issueSideLean">Leaning sideways</span>
+            </label>
+            <label class="switch">
+              <input type="checkbox" data-issue="blink" checked />
+              <span class="switch__track" aria-hidden="true"></span>
+              <span data-i18n="eyeCare">Blink reminder</span>
+            </label>
+            <label class="switch">
+              <input type="checkbox" data-issue="sitting" checked />
+              <span class="switch__track" aria-hidden="true"></span>
+              <span data-i18n="sittingReminder">Sitting reminder</span>
+            </label>
+            <label class="switch">
+              <input type="checkbox" data-issue="lookAway" checked />
+              <span class="switch__track" aria-hidden="true"></span>
+              <span data-i18n="lookAwayReminder">Look-away reminder</span>
+            </label>
+          </div>
+        </section>
+
+        <section class="faq" data-i18n-aria="faqTitle">
+          <div class="label" data-i18n="faqTitle">FAQ</div>
+          <details class="faq__item">
+            <summary data-i18n="faqLookAwayQ">Why look away every 20 minutes?</summary>
+            <p data-i18n="faqLookAwayA"></p>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="faqSittingQ">Why not sit for hours?</summary>
+            <p data-i18n="faqSittingA"></p>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="faqBlinkQ">Why blink more?</summary>
+            <p data-i18n="faqBlinkA"></p>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="faqTooCloseQ">Why keep the screen at a distance?</summary>
+            <p data-i18n="faqTooCloseA"></p>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="faqPrivacyQ">Does my camera feed go anywhere?</summary>
+            <p data-i18n="faqPrivacyA"></p>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="faqCalibrateQ">Why calibrate first?</summary>
+            <p data-i18n="faqCalibrateA"></p>
+          </details>
+        </section>
+      </div>
+
+      <div class="side">
+        <section id="panel" class="panel">
+          <!-- Travels with the panel into the floating window, where it washes that window red; hidden on the page. -->
+          <div id="pip-wash" class="alarm-overlay alarm-overlay--pip" aria-hidden="true" style="opacity: 0"></div>
+          <div class="verdict">
+            <span id="verdict-dot" class="verdict__dot verdict__dot--idle" aria-hidden="true"></span>
+            <div class="verdict__text">
+              <div id="status" class="verdict__title">Not started</div>
+              <div id="fps" class="verdict__meta">Waiting for camera</div>
+            </div>
+          </div>
+          <div id="issues" class="gauges" data-i18n-aria="checksAria"></div>
+        </section>
+
+        <details class="details">
+          <summary class="label" data-i18n="rawMetrics">Raw metrics</summary>
+          <div class="table-wrap">
+            <table class="metrics">
+              <colgroup>
+                <col />
+                <col />
+                <col />
+                <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th data-i18n="thMetric">Metric</th>
+                  <th data-i18n="thCurrent">Current</th>
+                  <th data-i18n="thBaseline">Baseline</th>
+                  <th data-i18n="thDeviation">Deviation</th>
+                </tr>
+              </thead>
+              <tbody id="metrics"></tbody>
+            </table>
+          </div>
+        </details>
+
+        <section class="events" data-i18n-aria="eventsAria">
+          <div class="label" data-i18n="events">Events</div>
+          <pre id="log" class="events__log" data-i18n-empty="noEvents" data-empty="No events yet"></pre>
+        </section>
+      </div>
+    </main>
+
+    <!-- Inline opacity so the wash never animates in from an unstyled state while the CSS loads. -->
+    <div id="alarm-overlay" class="alarm-overlay" aria-hidden="true" style="opacity: 0"></div>
+  </body>
+</html>
